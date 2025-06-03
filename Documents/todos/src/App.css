@@ -1,0 +1,80 @@
+body { 
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.main { 
+  box-shadow: 0 6px 16px rgb(0, 0, 0, 0.15);
+  min-width: 400px;
+  min-height: 400px;
+  border-radius: 15px;
+}
+
+.title { 
+  font-size: 35px;
+}
+
+.filters { 
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button { 
+  width: 100px;
+  min-height: 40px;
+  background-color: rgb(64, 64, 234);
+  color: #fff;
+  border: 1px solid rgb(64, 64, 234);
+  border-radius: 5px;
+  cursor: pointer;
+  height: 25px;
+  transition: transform 0.3s ease;
+
+}
+
+.button:hover { 
+  transform: scale(1.1);
+}
+
+.button:active { 
+  background-color: blue;
+}
+
+.delete__button { 
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.filter__button:active { 
+  background-color: rgb(47, 47, 188);
+}
+
+.task-counter p { 
+  font-size: 20px;
+}
+
+
+.todo__form { 
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+.todo__form input { 
+  border: 1px solid #000;
+  border-radius: 7px;
+}
+
+.task__container { 
+  text-align: start;
+}
+
+.task__list { 
+ list-style: none;
+ 
+}
