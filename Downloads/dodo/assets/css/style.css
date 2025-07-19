@@ -1,0 +1,376 @@
+@font-face {
+    font-family: "Nunito";
+    src: url(../fonts/Nunito-Regular.ttf);
+    font-weight: 400;
+}
+
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a { 
+    text-decoration: none;
+    color: #000;
+}
+
+button { 
+    background-color: transparent;
+}
+
+body { 
+   font-family: "Nunito";
+   background-color: #FFFFFF;
+}
+
+header { 
+    padding-top: 25px;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+.contact-header { 
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 41px;
+    justify-content: space-between;
+}
+
+.phone-text { 
+    color: #999999;
+    font-size: 15px;
+}
+
+.container { 
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.contact-info { 
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigations-links { 
+    display: flex;
+    gap: 24px;
+}
+
+.active-link { 
+    color: #F96900;
+}
+
+.header-link:hover { 
+    text-decoration: underline;
+}
+
+.style-button { 
+    color: #fff;
+    width: 104px;
+    height: 40px;
+    background-color: #F96900;
+    border: 1px solid #F96900;
+    border-radius: 1000px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.style-button:hover { 
+    background-color: #e16913;
+}
+
+.slider-section {
+    position: relative;
+    max-width: 1288px;
+    height: 300px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.banner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 20px;
+}
+
+.banner.active {
+    transform: translateX(0);
+}
+
+.banner:not(.active) {
+    transform: translateX(100%);
+}
+.section-news { 
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+.section-title { 
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-left: 300px;
+}
+
+.cards-row { 
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card { 
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    min-width: 250px;
+    min-height: 104px;
+    box-shadow: 0 2px 8px rgba(6, 5, 50, 0.05);
+}
+
+
+.card-info { 
+    margin-left: 22px;
+}
+
+.pizza-name { 
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.pizza-price { 
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.pizza { 
+    margin-top: 70px;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+.pizza-cards-row { 
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    gap: 20px;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.pizza-title { 
+    margin-bottom: 40px;
+}
+
+.pizza-card { 
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 369px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: white;
+}
+
+.pizza-card-title { 
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    min-height: 40px;
+}
+
+.pizza-card-text { 
+    color: #73798C;
+    font-size: 14px;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+.payment-info { 
+    display: flex;
+    align-items: center;
+    gap: 46px;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.pizza-price { 
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.quick-button { 
+    background-color: #FFF0E6;
+    color: #D15700;
+    border: 1px solid #FFF0E6;
+    border-radius: 1000px;
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.combo-section { 
+    margin-top: 70px;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+.snacks { 
+    margin-top: 70px;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+.desserts { 
+    margin-top: 70px;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+.drink { 
+    margin-top: 70px;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+.drinks-row { 
+   margin-bottom: 134px; 
+}
+
+footer { 
+    background-color: #464C55;
+    color: #fff;
+    width: 100%;
+    margin-right: 569px;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 50px;
+}
+
+footer a { 
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+footer a:hover { 
+    text-decoration: underline;
+}
+
+footer h6 { 
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.links-container { 
+    display: flex;
+    gap: 75px;
+    padding-left: 110px;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+
+.footer-links { 
+    display: flex;
+    gap: 75px;
+}
+
+.footer-column { 
+    display: flex;
+    flex-direction: column;
+}
+
+.info-column { 
+    justify-items: end;
+}
+
+.social-row { 
+    margin-bottom: 30px;
+}
+
+.phone-number { 
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.footer-text { 
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 26px;
+}
+
+.footer-email { 
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.money-container { 
+    margin-top: 120px;
+    display: flex;
+    gap: 156px;
+    margin-bottom: 40px;
+}
+
+.revenue h6 { 
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.revenue p { 
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.pizzerias h6 { 
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.pizzerias p { 
+    font-size: 16px;
+    font-weight: 400;
+}
+
+hr { 
+    opacity: 0.1;
+}
+
+.footer-info { 
+    display: flex;
+    color: #C7C8CB;
+    align-items: center;
+    margin-top: 46px;
+    justify-content: space-between;
+}
+
+.footer-info h6 { 
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+
+.links { 
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+}
